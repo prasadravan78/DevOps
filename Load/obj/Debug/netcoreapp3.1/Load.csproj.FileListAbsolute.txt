@@ -1,0 +1,9 @@
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\bin\Debug\netcoreapp3.1\Load.dll.config
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\bin\Debug\netcoreapp3.1\Load.deps.json
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\bin\Debug\netcoreapp3.1\Load.dll
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\bin\Debug\netcoreapp3.1\Load.pdb
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.csprojAssemblyReference.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.AssemblyInfoInputs.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.AssemblyInfo.cs
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.dll
+C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.pdb

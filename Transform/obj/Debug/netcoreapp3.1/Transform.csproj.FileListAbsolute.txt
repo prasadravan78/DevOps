@@ -1,0 +1,7 @@
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\bin\Debug\netcoreapp3.1\Transform.dll.config
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\bin\Debug\netcoreapp3.1\Transform.deps.json
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\bin\Debug\netcoreapp3.1\Transform.dll
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\obj\Debug\netcoreapp3.1\Transform.csprojAssemblyReference.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\obj\Debug\netcoreapp3.1\Transform.AssemblyInfoInputs.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\obj\Debug\netcoreapp3.1\Transform.AssemblyInfo.cs
+C:\Users\ravan\source\repos\DevOpsConfigurer\Transform\obj\Debug\netcoreapp3.1\Transform.csproj.CoreCompileInputs.cache

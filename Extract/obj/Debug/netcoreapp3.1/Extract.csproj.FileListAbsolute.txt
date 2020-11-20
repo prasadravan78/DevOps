@@ -1,0 +1,10 @@
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\bin\Debug\netcoreapp3.1\Extract.deps.json
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\bin\Debug\netcoreapp3.1\Extract.dll
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.csprojAssemblyReference.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.AssemblyInfoInputs.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.AssemblyInfo.cs
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\bin\Debug\netcoreapp3.1\Extract.dll.config
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\bin\Debug\netcoreapp3.1\Extract.pdb
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.csproj.CoreCompileInputs.cache
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.dll
+C:\Users\ravan\source\repos\DevOpsConfigurer\Extract\obj\Debug\netcoreapp3.1\Extract.pdb

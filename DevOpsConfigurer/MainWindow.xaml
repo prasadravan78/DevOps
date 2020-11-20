@@ -1,0 +1,16 @@
+﻿<Window x:Class="DevOpsConfigurer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DevOpsConfigurer"
+        mc:Ignorable="d"
+        Title="DevOps Configurer" Height="450" Width="800">
+    <Grid>
+        <Button Content="Get DevOps data" RenderTransformOrigin="0.489,0.595" Margin="312,290,331,96" Click="Button_Click"/>
+        <Label Content="Client ID" HorizontalAlignment="Left" Height="35" Margin="83,40,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Client Secret" HorizontalAlignment="Left" Height="35" Margin="83,120,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="250,40,142,339" Name="clientId"/>
+        <TextBox TextWrapping="Wrap" Margin="250,120,142,259" Name="clientSecret" Text="{Binding ElementName=clientId, Path=Text}"/>
+    </Grid>
+</Window>
