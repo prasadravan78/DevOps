@@ -23,7 +23,6 @@
             };            
 
             projects.ItemsSource = extractWorkItem.GetProjectsByOrganisation(devOpsParameters).Result;
-            projects.Text = "Please select";
         }
 
         private  void Button_Click(object sender, RoutedEventArgs e)
