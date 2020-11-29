@@ -1554,6 +1554,19 @@
         "runtime": {
           "bin/placeholder/Extract.dll": {}
         }
+      },
+      "Load/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.TeamFoundationServer.Client": "16.153.0"
+        },
+        "compile": {
+          "bin/placeholder/Load.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Load.dll": {}
+        }
       }
     }
   },
@@ -5634,11 +5647,17 @@
       "type": "project",
       "path": "../Extract/Extract.csproj",
       "msbuildProject": "../Extract/Extract.csproj"
+    },
+    "Load/1.0.0": {
+      "type": "project",
+      "path": "../Load/Load.csproj",
+      "msbuildProject": "../Load/Load.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Extract >= 1.0.0",
+      "Load >= 1.0.0",
       "Microsoft.Extensions.DependencyInjection >= 5.0.0",
       "Microsoft.TeamFoundationServer.Client >= 16.153.0"
     ]
@@ -5679,6 +5698,9 @@
           "projectReferences": {
             "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\DevOps\\Extract\\Extract.csproj": {
               "projectPath": "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\DevOps\\Extract\\Extract.csproj"
+            },
+            "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\DevOps\\Load\\Load.csproj": {
+              "projectPath": "C:\\Users\\ravan\\Documents\\Learnings\\Dot Net Core\\Code\\DevOps\\Load\\Load.csproj"
             }
           }
         }

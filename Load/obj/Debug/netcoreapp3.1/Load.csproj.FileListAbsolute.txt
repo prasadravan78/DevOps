@@ -7,3 +7,13 @@ C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.A
 C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.AssemblyInfo.cs
 C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.dll
 C:\Users\ravan\source\repos\DevOpsConfigurer\Load\obj\Debug\netcoreapp3.1\Load.pdb
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\bin\Debug\netcoreapp3.1\Load.dll.config
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\bin\Debug\netcoreapp3.1\Load.deps.json
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\bin\Debug\netcoreapp3.1\Load.dll
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\bin\Debug\netcoreapp3.1\Load.pdb
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.csprojAssemblyReference.cache
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.AssemblyInfoInputs.cache
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.AssemblyInfo.cs
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.csproj.CoreCompileInputs.cache
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.dll
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\Load\obj\Debug\netcoreapp3.1\Load.pdb

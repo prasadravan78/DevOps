@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Extract.DevOps
+﻿namespace Extract.DevOps
 {
     public class Constants
     {
@@ -11,6 +7,7 @@ namespace Extract.DevOps
         public class Common
         {
             public const string PERSONAL_ACCESS_TOKEN = "personalAccessToken";
+            public const string GET_PROJECTS_URL = "getProjectsUrl";
             public const string GET_BACKLOG_LEVEL_WORK_ITEMS_URL = "getBacklogLevelWorkItemsUrl";
             public const string GET_WORK_ITEM_BY_ID_URL = "getWorkItemByIdUrl";
         }

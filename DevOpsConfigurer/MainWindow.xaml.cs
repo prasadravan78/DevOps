@@ -1,62 +1,54 @@
 ﻿namespace DevOpsConfigurer
-{
+{    
+    using System.Windows;
     using Extract.DevOps.ExtractWorkItem;
     using Extract.DevOps.Models;
-    using Microsoft.TeamFoundation.Work.WebApi;
-    using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
-    using Newtonsoft.Json;
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Net.Http;
-    using System.Net.Http.Headers;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Data;
-    using System.Windows.Documents;
-    using System.Windows.Input;
-    using System.Windows.Media;
-    using System.Windows.Media.Imaging;
-    using System.Windows.Navigation;
-    using System.Windows.Shapes;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
 	{
-        //private readonly IExtractWorkItem extractWorkItem;
-
-		public MainWindow(IExtractWorkItem extractWorkItem)
-		{
-            //this.extractWorkItem = extractWorkItem;
-            InitializeComponent();
-		}
-
         public MainWindow()
         {
+            InitializeComponent();
+            IExtractWorkItem extractWorkItem = new ExtractWorkItem();
+            organisation.Text = "OrganizationRP1";
+            
+            DevOpsParameters devOpsParameters = new DevOpsParameters
+            {
+                OrganisationName = organisation.Text,
+                ProjectName = "ProjectRP1",
+                ProjectTeamName = "ProjectRP1 Team"
+            };            
 
+            projects.ItemsSource = extractWorkItem.GetProjectsByOrganisation(devOpsParameters).Result;
+            projects.Text = "Please select";
         }
 
         private  void Button_Click(object sender, RoutedEventArgs e)
 		{
-            DevOpsParameters devOpsParameters = new DevOpsParameters
+            if (projects.SelectedValue != null)
             {
-                OrganisationName = "OrganizationRP1",
-                ProjectName = "ProjectRP1",
-                ProjectTeamName = "ProjectRP1 Team"
-            };
+                IExtractWorkItem extractWorkItem = new ExtractWorkItem();
+                DevOpsParameters devOpsParameters = new DevOpsParameters
+                {
+                    OrganisationName = organisation.Text,
+                    ProjectName = projects.SelectedValue.ToString(),
+                    ProjectTeamName = "ProjectRP1 Team"
+                };
 
-            IExtractWorkItem extractWorkItem = new ExtractWorkItem();
+                var backlogLevelWorkItems = extractWorkItem.GetBacklogLevelWorkItemsAsync(devOpsParameters);
 
-            var backlogLevelWorkItems = extractWorkItem.GetBacklogLevelWorkItemsAsync(devOpsParameters);
+                var workItems = extractWorkItem.GetWorkItemsAsync(devOpsParameters, backlogLevelWorkItems.Result);
 
-            var workItems = extractWorkItem.GetWorkItemsAsync(devOpsParameters, backlogLevelWorkItems.Result);
-
-            DevOpsDataWindow devOpsDataWindow = new DevOpsDataWindow(workItems.Result);
-            devOpsDataWindow.Show();
+                DevOpsDataWindow devOpsDataWindow = new DevOpsDataWindow(workItems.Result);
+                devOpsDataWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select project", "Error");
+            }
         }
     }
 }

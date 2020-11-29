@@ -9,6 +9,7 @@
       "DevOpsConfigurer/1.0.0": {
         "dependencies": {
           "Extract": "1.0.0",
+          "Load": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.0",
           "Microsoft.TeamFoundationServer.Client": "16.153.0"
         },
@@ -954,6 +955,14 @@
         "runtime": {
           "Extract.dll": {}
         }
+      },
+      "Load/1.0.0": {
+        "dependencies": {
+          "Microsoft.TeamFoundationServer.Client": "16.153.0"
+        },
+        "runtime": {
+          "Load.dll": {}
+        }
       }
     }
   },
@@ -1636,6 +1645,11 @@
       "hashPath": "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
     },
     "Extract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Load/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

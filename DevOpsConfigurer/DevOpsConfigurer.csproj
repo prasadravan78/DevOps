@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Extract\Extract.csproj" />
+    <ProjectReference Include="..\Load\Load.csproj" />
   </ItemGroup>
 
 </Project>

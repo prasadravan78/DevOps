@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\ravan\source\repos\DevOpsConfigurer\DevOpsConfigurer\obj\Debug\netcoreapp3.1\
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\DevOpsConfigurer\obj\Debug\netcoreapp3.1\
 DevOpsConfigurer
 none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
-C:\Users\ravan\source\repos\DevOpsConfigurer\DevOpsConfigurer\App.xaml
+C:\Users\ravan\Documents\Learnings\Dot Net Core\Code\DevOps\DevOpsConfigurer\App.xaml
 2996472552
 
 5674989353
-2171041802517
+2181622294207
 DevOpsDataWindow.xaml;MainWindow.xaml;
 
 False

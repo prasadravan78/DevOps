@@ -7,10 +7,16 @@
         mc:Ignorable="d"
         Title="DevOps Configurer" Height="450" Width="800">
     <Grid>
-        <Button Content="Get DevOps data" RenderTransformOrigin="0.489,0.595" Margin="312,290,331,96" Click="Button_Click"/>
         <Label Content="Client ID" HorizontalAlignment="Left" Height="35" Margin="83,40,0,0" VerticalAlignment="Top" Width="100"/>
         <Label Content="Client Secret" HorizontalAlignment="Left" Height="35" Margin="83,120,0,0" VerticalAlignment="Top" Width="100"/>
-        <TextBox Text="" TextWrapping="Wrap" Margin="250,40,142,339" Name="clientId"/>
-        <TextBox TextWrapping="Wrap" Margin="250,120,142,259" Name="clientSecret" Text="{Binding ElementName=clientId, Path=Text}"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="250,40,142,340" Name="clientId"/>
+        <TextBox TextWrapping="Wrap" Margin="250,120,142,260" Name="clientSecret" Text="{Binding ElementName=clientId, Path=Text}"/>
+        <Label Content="Organisation" HorizontalAlignment="Left" Height="35" Margin="83,200,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox Text="" TextWrapping="Wrap" Margin="250,200,142,180" Name="organisation" IsEnabled="False"/>
+        <Label Content="Project" HorizontalAlignment="Left" Height="35" Margin="83,280,0,0" VerticalAlignment="Top" Width="100"/>
+        <ComboBox Margin="250,280,142,100" Name="projects">
+        </ComboBox>
+        <Button Content="Get Work Items" RenderTransformOrigin="0.489,0.595" Margin="322,360,322,20" Click="Button_Click"/>
+        
     </Grid>
 </Window>
