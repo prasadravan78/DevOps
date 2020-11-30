@@ -61,7 +61,7 @@ namespace DevOpsConfigurer {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/DevOpsConfigurer;component/devopsdatawindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/DevOpsConfigurer;V1.0.0.0;component/devopsdatawindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\DevOpsDataWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
