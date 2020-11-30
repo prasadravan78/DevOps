@@ -9,7 +9,6 @@
     using System.Text;
     using System.Threading.Tasks;
     using Extract.DevOps.Models;
-    using Microsoft.TeamFoundation.Core.WebApi;
     using Microsoft.TeamFoundation.Work.WebApi;
     using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
     using Newtonsoft.Json;
@@ -36,9 +35,9 @@
                         client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
                         client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-                            Convert.ToBase64String(
-                                Encoding.ASCII.GetBytes(
-                                    string.Format("{0}:{1}", "", restApiDetails.PAT))));
+                                                                                                    Convert.ToBase64String(Encoding.ASCII.GetBytes(string.Format("{0}:{1}", 
+                                                                                                                                                                 "", 
+                                                                                                                                                                 restApiDetails.PAT))));
 
                         using (HttpResponseMessage response = client.GetAsync(
                                     restApiDetails.Url).Result)
