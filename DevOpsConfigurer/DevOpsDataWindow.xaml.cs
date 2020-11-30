@@ -18,21 +18,15 @@
             InitializeComponent();
         }
 
+        public static List<WorkItem> extractedWorkItems = null;
         public DevOpsDataWindow(List<WorkItem> workItems)
         {
             InitializeComponent();
-
-            List<WorkItemViewModel> workItemViewModels = new List<WorkItemViewModel>();
-            IDevOpsWorkItem devOpsWorkItem = new DevOpsWorkItem();
-            DevOpsParameters devOpsParameters = new DevOpsParameters
-            {
-                OrganisationName = "OrganizationRP2",
-                ProjectName = "ProjectRP2",
-                ProjectTeamName = "ProjectRP2 Team"
-            };
+            List<WorkItemViewModel> workItemViewModels = new List<WorkItemViewModel>();            
 
             if (workItems != null)
             {
+                extractedWorkItems = workItems;
                 foreach (var workItem in workItems)
                 {
                     object title = "";
@@ -43,6 +37,25 @@
 
                 workItemsDataGrid.ItemsSource = workItemViewModels;
             }            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (extractedWorkItems != null)
+            {
+                IDevOpsWorkItem devOpsWorkItem = new DevOpsWorkItem();
+                DevOpsParameters devOpsParameters = new DevOpsParameters
+                {
+                    OrganisationName = "OrganizationRP2",
+                    ProjectName = "ProjectRP2",
+                    ProjectTeamName = "ProjectRP2 Team"
+                };
+
+                foreach (var workItem in extractedWorkItems)
+                {
+                    devOpsWorkItem.CreateWorkItem(devOpsParameters, workItem);
+                }
+            }
         }
     }
 }

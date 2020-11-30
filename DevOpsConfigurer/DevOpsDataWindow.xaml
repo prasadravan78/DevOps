@@ -6,13 +6,14 @@
         xmlns:local="clr-namespace:DevOpsConfigurer"
         mc:Ignorable="d"
         Title="DevOpsDataWindow" Height="450" Width="800">
-    <Grid Margin="10">
-        <DataGrid Name="workItemsDataGrid" AutoGenerateColumns="False">
+    <Grid Margin="10,10,10,169">
+        <DataGrid Name="workItemsDataGrid" AutoGenerateColumns="False" Margin="48,37,44,0" Height="332" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridCheckBoxColumn></DataGridCheckBoxColumn>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="Title" Binding="{Binding Title}" />
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Create Work Items" Margin="314,280,310,-77" Click="Button_Click"/>
     </Grid>
 </Window>
