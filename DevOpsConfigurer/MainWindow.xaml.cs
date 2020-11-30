@@ -42,6 +42,7 @@
                 var workItems = extractWorkItem.GetWorkItemsAsync(devOpsParameters, backlogLevelWorkItems.Result);
 
                 DevOpsDataWindow devOpsDataWindow = new DevOpsDataWindow(workItems.Result);
+                //DevOpsDataWindow devOpsDataWindow = new DevOpsDataWindow();
                 devOpsDataWindow.Show();
             }
             else

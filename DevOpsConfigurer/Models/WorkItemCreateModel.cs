@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DevOpsConfigurer.Models
+﻿namespace DevOpsConfigurer.Models
 {
-    public class WorkItemCreateModel
+    public class WorkItemViewModel
     {
-        public string op = "add";
+        public int Id { get; set; }
 
-        public string path { get; set; }
-
-        public string from { get; set; }
-
-        public string value { get; set; }
+        public string Title { get; set; }
     }
 }
